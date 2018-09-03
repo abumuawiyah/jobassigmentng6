@@ -19,6 +19,8 @@ Please install yarn as most of cmd use yarn.
 run yarn
 ```bash
 yarn
+yarn run build-lib
+yarn start
 ```
 
 > i have created shortcuts for serve, build & test
