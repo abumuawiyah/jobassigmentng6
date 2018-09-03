@@ -21,7 +21,7 @@
 
 <br/>
 
-<ngb-pagination 
+<ngb-pagination *ngIf="isDataAvailable"
   (pageChange)="onPageChange($event)"
   [collectionSize]="metadata.total" 
   [(page)]="metadata.page" 

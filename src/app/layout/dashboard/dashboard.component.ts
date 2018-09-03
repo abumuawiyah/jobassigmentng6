@@ -24,10 +24,10 @@ export class DashboardComponent implements OnInit {
   constructor(private githubServ: GithubapiService) {}
 
   ngOnInit() {
-    this.getRepos({
-      page: this.page,
-      keyword: this.keyword
-    });
+    // this.getRepos({
+    //   page: this.page,
+    //   keyword: this.keyword
+    // });
   }
 
   getRepos(config: any) {

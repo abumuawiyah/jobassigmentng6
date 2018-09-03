@@ -37,9 +37,9 @@ export class DefaultTableComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     const currVal = changes.items.currentValue;
     this._items = currVal;
-    this.isDataAvailable = true;
-    if (currVal && currVal.length === 0) {
-      this.isDataAvailable = false;
+    this.isDataAvailable = false;
+    if (currVal && currVal.length > 0) {
+      this.isDataAvailable = true;
     }
   }
 
