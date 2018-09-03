@@ -10,10 +10,6 @@
 - CLI 6
 - BootStrap 4 and ngb-bootstrap
 
-### Reference
-[SB Admin Angular 6](https://github.com/start-angular/SB-Admin-BS4-Angular-6)
-This is my favorite scaffold as it's co-operation works between Angular-team with BootStrap-team.
-
 ## Kick-start
 Please install yarn as most of cmd use yarn. 
 
