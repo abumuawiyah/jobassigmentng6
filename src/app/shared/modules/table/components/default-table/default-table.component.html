@@ -1,0 +1,30 @@
+
+<div *ngIf="items && isDataAvailable" >
+  <div class="list-group" *ngFor="let item of items">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{item.full_name}}</h5>
+        <small>{{item.language}}</small>&nbsp;<small>{{item.stargazers_count}}</small>
+       
+      </div>
+      <p class="mb-1">
+        {{item.description}}
+      </p>
+      <small>{{item.updated_at | date:'full'}}</small>
+    </a>
+  </div>
+</div>
+
+<div class="alert alert-danger" role="alert" *ngIf="!isDataAvailable">
+  No repository available
+</div>
+
+<br/>
+
+<ngb-pagination 
+  (pageChange)="onPageChange($event)"
+  [collectionSize]="metadata.total" 
+  [(page)]="metadata.page" 
+  [maxSize]="metadata.maxSize" 
+  [boundaryLinks]="metadata.boundaryLinks">
+</ngb-pagination>

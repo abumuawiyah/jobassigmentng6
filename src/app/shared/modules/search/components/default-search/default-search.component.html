@@ -1,0 +1,5 @@
+<form [formGroup]="searchForm">
+    <div class="form-group">
+      <input type="text" (keydown.enter)="onKeydown($event)" formControlName="keyword" class="form-control" aria-describedby="search" placeholder="Keyword">
+    </div>
+</form>

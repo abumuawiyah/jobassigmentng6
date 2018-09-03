@@ -1,0 +1,12 @@
+<div [@routerTransition]>
+    <div class="row">
+        <div class="col">
+            <app-default-search (keyPressed)="onSearchEnter($event)"></app-default-search>
+            <app-default-table 
+                (pageChanged)="onPagingButtonClick($event)"
+                [metadata]="tableMetadata" 
+                [items]="tableItems">
+            </app-default-table>
+        </div>
+    </div>
+</div>
