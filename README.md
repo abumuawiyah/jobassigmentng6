@@ -16,7 +16,8 @@ Please install yarn as most of cmd use yarn.
 > i am using nodeJS v-8.9.3
 
 ### Follow below steps
-run yarn
+below 3 cmd needed for you to start the app
+
 ```bash
 yarn
 yarn run build-lib
